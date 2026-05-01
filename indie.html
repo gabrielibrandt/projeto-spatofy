@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spatofy | Indie</title>
+    <link rel="stylesheet" href="generos.css">
+    <link rel="shortcut icon" href="imagens/icone.ico" type="image/x-icon">
+</head>
+<body>
+    
+    <div id="cabecalho"> 
+        <a href="index.html"><img src="imagens/logo site.png" alt="Logo Spatofy"></a>
+        <div class="textos">
+        <h1>Spatofy</h1>
+        </div>
+    </div>
+
+    <div id="comeco">
+        <h1>Recomendações</h1>
+        <h2>&#127929;Indie</h2>
+        <button>Aleatório</button>
+    </div>
+
+<div class="container-musicas">
+
+    <a href="https://www.youtube.com/watch?v=knU9gRUWCno" target="_blank" class="musicas">
+        <h1>Someday</h1>
+        <p>The Strokes</p>
+    </a>
+
+    <a href="https://www.youtube.com/watch?v=GHe8kKO8uds" target="_blank" class="musicas">
+        <h1>Eventually</h1>
+        <p>Tame Impala</p>
+    </a>
+
+    <a href="https://www.youtube.com/watch?v=wTAFiZeYazs" target="_blank" class="musicas">
+        <h1>Solamento</h1>
+        <p>Tuyo</p>
+    </a>
+
+    <a href="https://www.youtube.com/watch?v=l7KktLEdFrc" target="_blank" class="musicas">
+        <h1>Viagem Perdida</h1>
+        <p>Plutão Já Foi Planeta</p>
+    </a>
+    </div>
+
+    <div id="rodape">
+        <p>© Desenvolvido por Gabrieli Brandt e Nicole Ceriani</p>
+    </div>
+
+<script>
+    function recomendar() {
+    const musicas = document.querySelectorAll('.musicas');
+    const indice = Math.floor(Math.random() * musicas.length);
+    const escolhida = musicas[indice];
+    window.open(escolhida.href, '_blank');
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+body {   
+    margin: 0;   
+    background-color: rgb(255, 246, 235);  
+    font-family: Arial, sans-serif;
+    display: flex; /* ativa flexbox */
+    flex-direction: column; /* organiza em coluna (vertical) */
+    min-height: 100vh; /* ocupa a altura inteira da tela */
+}
+
+#cabecalho {   
+    background-color: rgb(20, 20, 20);   
+    color: #fff6eb;  
+    padding: 16px;
+    box-shadow: 1px 1px 20px 1px rgb(98, 98, 98);    
+    background-image: linear-gradient(to right, black, rgb(29, 29, 29));
+    display: flex; /* ativa flex */
+    align-items: center; /* alinha verticalmente */
+    justify-content: center; /* centraliza horizontalmente */
+    gap: 40px; /* espaço entre itens */
+    flex-wrap: wrap; /* quebra linha se necessário */
+}
+
+#cabecalho img {
+    height: 120px;
+}
+
+#cabecalho h1 {
+    text-align: left;
+    margin-left: -25px;
+}
+
+#comeco {
+    margin-top: 50px;
+    text-align: center;
+    text-shadow: 2px 2px 4px  rgb(202, 202, 202);
+}
+
+#comeco h1 { 
+    font-size: 22px;
+    text-decoration-line: underline;
+}
+
+#comeco h2 { 
+    font-size: 34px;
+}
+
+#comeco button { 
+    font-size: 17px;
+    padding: 6px;
+    border-radius: 6px;
+    color: black;
+    background-color: #b4b4ad;
+    box-shadow: 1px 1px 4px  rgb(175, 175, 175);
+    cursor: pointer; /* transforma o cursor do mouse em estilo clicavel */
+}
+
+.musicas {      
+    width: 250px; /* largura fixa */
+    height: 100px; /* altura fixa */
+    text-align: center;    
+    border-radius: 5px;    
+    box-shadow: 1px 1px 23px 1px rgba(116, 116, 116, 0.308);      
+    background-image: linear-gradient(to right, #b4b4ad, #a8a4a0);    
+    transition: 0.3s; /* animação suave */
+    margin-top: 30px;
+    text-decoration: none; /* remove sublinhado */
+    color: black; /* muda a cor do texto */
+    display: block; /* ocupa área inteira do link */
+    text-shadow: 1px 1px 4px rgb(134, 134, 134);
+}
+
+.musicas:hover {    
+    transform: translateY(-5px); /* levanta o card */
+    cursor: pointer;
+}
+
+
+.container-musicas {
+    margin-top: 20px;
+    display: flex; /* ativa flex */
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center; /* centraliza verticalmente */
+    gap: 20px; /* espaço entre os cards */
+    flex-wrap: wrap; /* permite quebrar linha */
+}
+
+.musicas h1{
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.musicas p{
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+#rodape {    
+    background-color: rgb(20, 20,20);    
+    padding: 12px;    
+    color: rgb(255, 246, 235);    
+    margin-top: 10px;    
+    text-align: center;    
+    box-shadow: 1px 1px 20px 1px rgb(98, 98, 98);
+    margin-top: auto; /* empurra para o final da tela (flex) */
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {  
+    
+    .container-musicas {
+    flex-direction: column; /* empilha os cards */
+    align-items: center; /* centraliza sem criar espaço estranho */
+    gap: 10px; /* diminui o espaço entre os cards */
+    }
+    .musicas {        
+        width: 90%; /* ocupa quase toda a tela mas não toda */    
+        height: auto; /* altura automática */
+        margin: 0;  
+    } 
+    #rodape {
+        margin-top: 80px;
+    }
+}

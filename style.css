@@ -1,0 +1,187 @@
+body {   
+    margin: 0;   
+    background-color: rgb(255, 246, 235);  
+    font-family: Arial, sans-serif;
+}
+
+/* CABEÇALHO */
+#cabecalho {   
+    background-color: rgb(20, 20, 20);   
+    color: #fff6eb;  
+    padding: 50px;
+    box-shadow: 1px 1px 20px 1px rgb(98, 98, 98);    
+    background-image: linear-gradient(to right, black, rgb(29, 29, 29));
+    display: flex; /* ativa flex */
+    align-items: center; /* alinha verticalmente */
+    justify-content: center; /* alinha horizontalmente */
+    gap: 35px; /* cria um espaço entre a logo e o titulo */
+    flex-wrap: wrap; /* quebra de linha */
+}
+
+a {
+    text-decoration: none;
+}
+
+#cabecalho img {
+    height: 120px; /* altura */
+}
+
+#cabecalho h1 {
+    text-align: left;
+    margin-bottom: 3px;
+}
+
+#cabecalho h2 {
+    text-align: left;
+}
+
+.textos {
+    text-align: center;
+}
+
+.textos h1 {
+    font-size: 40px;
+}
+
+.textos h2 {
+    font-size: 24px;
+}
+
+.textos h1,
+.textos h2 {    
+    margin: 0;
+}
+
+/* COMEÇO (imagem + texto centralizados) */
+#comeco {    
+    max-width: 1000px;  /*define o maximo de largura*/
+    margin: 80px auto; /*  aumenta espaço em cima e embaixo */
+    display: flex; /*ativa o flexbox*/
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: #c9c8be;
+    background-image: linear-gradient(to right, rgb(72, 72, 70), rgb(90, 88, 86));    
+    border-radius: 7px;
+    color: #fff6eb;
+    padding: 30px; /*  importante pra dar respiro interno */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+#comeco img {
+    height: 450px;
+}
+
+#escopo {
+    max-width: 500px;
+    font-size: 17px;
+    line-height: 1.6; /* define um espaço entre as linhas para ficar mais legivel */
+}
+
+#imagemComeco {
+    max-width: 400px;
+}
+
+#imagemComeco img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* TEXTOS */
+#descricaotitulo {    
+    font-size: 130%;    
+    padding: 0 0 10px 0;
+}
+    
+#descricao {    
+    font-size: 105%;    
+    padding: 0 ;
+}
+
+/* IMAGENS RESPONSIVAS */
+img {    
+    max-width: 100%;    
+    height: auto;
+}
+
+/* TÍTULOS */
+h2 {    
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 80px;
+    font-size: 35px;
+}
+
+/* CONTAINER DOS CARDS */
+.container-generos {
+    display: flex;
+    justify-content: center; /* centraliza o conjunto */
+    flex-wrap: wrap; /* quebra só se não couber */
+    gap: 50px; /* espaço entre os cards */
+}
+
+/* CARDS */
+.generos {    
+    background-color: rgb(90, 88, 86);    
+    width: 300px;    
+    height: 200px;    
+    text-align: center;    
+    border-radius: 5px;    
+    box-shadow: 1px 1px 23px 1px rgb(116, 116, 116);    
+    color: #fff6eb;    
+    background-image: linear-gradient(to right, rgb(72, 72, 70), rgb(90, 88, 86));    
+    transition: 0.3s; /*animação suave */
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+    
+.generos:hover {    
+    transform: translateY(-5px); /*levanta o card em animação*/
+    cursor: pointer;
+}
+
+.generos p {
+    font-size: 47px;
+}
+
+/* RODAPÉ */
+#rodape {    
+    background-color: rgb(20, 20,20);    
+    padding: 12px;    
+    color: rgb(255, 246, 235);      
+    text-align: center;    
+    box-shadow: 1px 1px 20px 1px rgb(98, 98, 98);
+    margin-top: 90px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {  
+    
+    .container-generos {
+    flex-direction: column; /* empilha os cards */
+    align-items: center; /* centraliza sem criar espaço estranho */
+    gap: 10px; /* diminui o espaço entre os cards */
+    }
+    .generos {        
+        width: 90%; /*limita a largura para celular*/
+        height: auto;  /*altura automática*/
+        margin: 0; /*tira margem*/
+    }
+
+    #cabecalho {
+        flex-direction: column; /* empilha os cards */
+    }
+
+    #comeco {
+        flex-direction: column; /* empilha os cards */
+        margin: 40px 15px; /* menos espaço lateral */
+        padding: 20px;
+        gap: 20px;
+    }
+    #rodape {
+    margin-top: 80px;
+    }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spatofy | Pop</title>
+    <link rel="stylesheet" href="generos.css">
+    <link rel="shortcut icon" href="imagens/icone.ico" type="image/x-icon">
+</head>
+<body>
+    
+    <div id="cabecalho"> 
+        <a href="index.html"><img src="imagens/logo site.png" alt="Logo Spatofy"></a>
+        <div class="textos">
+        <h1>Spatofy</h1>
+        </div>
+    </div>
+
+    <div id="comeco">
+        <h1>Recomendações</h1>
+        <h2>🪩Pop</h2>
+        <button onclick="recomendar()">Aleatório</button>
+    </div>
+
+<div class="container-musicas">
+
+    <a href="https://www.youtube.com/watch?v=8NaxT6V4Itc" target="_blank" class="musicas">
+        <h1>Let You Go</h1>
+        <p>Demi Lovato</p>
+    </a>
+
+    <a href="https://www.youtube.com/watch?v=AfSjnsYiY_A" target="_blank" class="musicas">
+        <h1>Casual</h1>
+        <p>Chappell Roan</p>
+    </a>
+
+    <a href="https://www.youtube.com/watch?v=oeFATgfxPOQ" target="_blank" class="musicas">
+        <h1>Low Profile</h1>
+        <p>Carol Biazin</p>
+    </a>
+
+    <a href="https://www.youtube.com/watch?v=sC0xkQA38t4" target="_blank" class="musicas">
+        <h1>Death of Me</h1>
+        <p>PVRIS</p>
+    </a>
+    </div>
+
+    <div id="rodape">
+        <p>© Desenvolvido por Gabrieli Brandt e Nicole Ceriani</p>
+    </div>
+
+<script>
+    function recomendar() {
+    const musicas = document.querySelectorAll('.musicas');
+    const indice = Math.floor(Math.random() * musicas.length);
+    const escolhida = musicas[indice];
+    window.open(escolhida.href, '_blank');
+}
+</script>
+
+</body>
+</html>

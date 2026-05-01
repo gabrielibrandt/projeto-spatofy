@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spatofy | Rock</title>
+    <link rel="stylesheet" href="generos.css">
+    <link rel="shortcut icon" href="imagens/icone.ico" type="image/x-icon">
+</head>
+<body>
+    
+    <div id="cabecalho"> 
+        <a href="index.html"><img src="imagens/logo site.png" alt="Logo Spatofy"></a>
+        <div class="textos">
+        <h1>Spatofy</h1>
+        </div>
+    </div>
+
+    <div id="comeco">
+        <h1>Recomendações</h1>
+        <h2>&#127928;Rock</h2>
+        <button onclick="recomendar()">Aleatório</button> <!-- botão que chama função JS -->
+    </div>
+
+<div class="container-musicas"> <!-- container flex dos cards -->
+
+    <a href="https://www.youtube.com/watch?v=hSDKdZENL5U" target="_blank" class="musicas"> <!-- card clicável -->
+        <h1>Besitos</h1> <!-- nome da música -->
+        <p>Pierce the Veil</p> <!-- artista -->
+    </a>
+
+    <a href="https://www.youtube.com/watch?v=L-MwRKNUj4k" target="_blank" class="musicas">
+        <h1>Milonga</h1>
+        <p>Fresno</p>
+     </a>
+
+    <a href="https://www.youtube.com/watch?v=aITT_525nKg" target="_blank" class="musicas">
+        <h1>Nó</h1>
+        <p>Supercombo</p>
+     </a>
+
+    <a href="https://www.youtube.com/watch?v=-k9qDxyxS3s" target="_blank" class="musicas">
+        <h1>Shadow Moses</h1>
+        <p>Bring Me The Horizon</p>
+     </a>
+    </div>
+
+    <div id="rodape">
+        <p>© Desenvolvido por Gabrieli Brandt e Nicole Ceriani</p>
+    </div>
+
+<script>
+    function recomendar() { // função ao clicar no botão
+    const musicas = document.querySelectorAll('.musicas'); // pega todas as músicas
+    const indice = Math.floor(Math.random() * musicas.length); // número aleatório
+    const escolhida = musicas[indice]; // seleciona uma música
+    window.open(escolhida.href, '_blank'); // abre o link da música
+}
+</script>
+
+</body>
+</html>
