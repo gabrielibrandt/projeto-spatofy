@@ -45,7 +45,7 @@ O projeto também funciona como um ponto de partida para futuras melhorias e per
 ## 1. Clone o repositório
 
 ```bash
-git clone https://github.com/SEU-USUARIO/projeto-spatofy.git
+git clone https://github.com/gabrielibrandt/projeto-spatofy.git
 ```
 
 ## 2. Acesse a pasta do projeto
