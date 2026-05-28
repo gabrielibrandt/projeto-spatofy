@@ -51,7 +51,7 @@ git clone https://github.com/gabrielibrandt/projeto-spatofy.git
 ## 2. Acesse a pasta do projeto
 
 ```bash
-cd spatofy
+cd projeto-spatofy
 ```
 
 ## 3. Abra o arquivo `index.html`
