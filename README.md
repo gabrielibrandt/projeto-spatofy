@@ -112,4 +112,4 @@ Sinta-se livre para utilizar como material de estudo.
 
 # 👨‍🏫 Autor
 
-Projeto criado para auxiliar alunos iniciantes no aprendizado de desenvolvimento web.
+Projeto criado por Gabrieli Brandt para auxiliar alunos iniciantes no aprendizado de desenvolvimento web.
